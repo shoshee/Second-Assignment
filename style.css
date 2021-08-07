@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ----Starting Part ----*/
+
+h1 {
+    color: #FFFFFF;
+    font-size: 47px;
+}
+
+.introduction {
+    background-color: #2D25A0;
+    width: 1440px;
+    min-height: 677px;
+    /* height: 677px;  */
+}
+
+.heading {
+    width: 485px;
+    height: 230px;
+    margin-top: 207px;
+    margin-left: 156px;
+    margin-bottom: 240px;
+}
+
+button {
+    width: 168px;
+    Height: 44px;
+    background-color: #E02C6D;
+    Padding: 10px, 24px, 10px, 24px;
+}
+
+.transit-button:hover {
+    transform: scale(1.2);
+    transition: transform 2s ease;
+}
+
+.starting-part {
+    border: 3px solid peachpuff;
+    display: flex;
+}
+
+.image-part {
+    padding: 153px 140px 86px;
+}
+
+.image-part img {
+    width: 500.01px;
+    height: 420px;
+}
+
+
+/* ------For middle part -------*/
+
+.middle-part {
+    background-color: #E6E6E6;
+    margin-left: 180px;
+    margin-right: 210px;
+    /* position: relative; */
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-row-gap: 27px; */
+    grid-gap: 27px;
+    /* align-items: center; */
+    /* margin-left: 180px; */
+    /* margin-right: 210px; */
+    margin-top: 3em;
+}
+
+.player {
+    width: 300px;
+    height: 474px;
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+}
+
+.player-detail {
+    /* display: flex; */
+    width: 300px;
+    height: 154px;
+}
+
+.player-detail p {
+    color: darkgrey;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/* -----For Bonus Part----- */
+
+.section-title {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: cadetblue;
+}
+
+.news-interview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+}
+
+.interview img {
+    width: 300px;
+    height: 256px;
+}
+
+.interview h4 {
+    color: rgb(38, 35, 32);
+}
+
+.matches {
+    text-align: center;
+}
+
+.match-info {
+    color: cornflowerblue
+}
+
+
+/* ----- For last part-Footer Area -----*/
+
+.footer-area {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    min-width: 483px;
+    min-height: 213px;
+    /* width: 483px; */
+    /* height: 213px; */
+    margin-top: 158px;
+    margin-left: 475px;
+    margin-right: 481px;
+}
+
+.logo-details img {
+    width: 483px;
+    height: 110px;
+}
+
+.media-icons {
+    width: 170px;
+    height: 32px;
+    display: flex;
+    /* margin-top: 130px; */
+    margin-left: 157px;
+}
+
+.copy-right {
+    color: dimgray;
+    margin-left: 124px;
+    margin-top: 1em;
+    width: 236px;
+    height: 31px;
+}
+
+
+/* -----For Responsive----- */
+
+@media only screen and (max-width:688px) {
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .starting-part {
+        flex-direction: column;
+    }
+    .news-interview {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-area {
+        position: absolute;
+    }
+}
